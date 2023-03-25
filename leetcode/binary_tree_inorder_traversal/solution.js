@@ -3,18 +3,18 @@
  * @param {TreeNode} root
  * @return {number[]}
  */
+let result = []
 var inorderTraversal = function (root) {
-    let result = []
-    let stack = []
-    let current = root
-    while(current || stack.length>0){
-        while(current){
-            stack.push(current)
-            current = current.left
-        }
-        current = stack.pop()
-        result.push(current.val)
-        current = current.right
-    }
+    result = []
+    inOrder(root)
     return result
 };
+
+var inOrder = function (root) {
+    if (root == null) return
+    inOrder(root.left)
+    result.push(root.val)
+    inOrder(root.right)
+}
+
+module.exports = inorderTraversal
