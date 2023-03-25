@@ -1,0 +1,11 @@
+{
+  "name": "implement_queue_using_stacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "myqueue.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC"
+}
