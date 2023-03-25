@@ -1,0 +1,12 @@
+{
+  "name": "binary_tree_postorder_traversal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "solution.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
