@@ -1,19 +1,16 @@
+let result;
 // 144. Binary Tree Preorder Traversal
 function preorderTraversal(root) {
-    if (!root) {
-        return [];
-    }
-    const stack = [root];
-    const result = [];
-    while (stack.length > 0) {
-        const curr = stack.pop();
-        result.push(curr.val);
-        if (curr.right) {
-            stack.push(curr.right);
-        }
-        if (curr.left) {
-            stack.push(curr.left);
-        }
-    }
+    result = [];
+    preOrder(root);
     return result;
 }
+
+var preOrder = function (root) {
+    if (root == null) return;
+    result.push(root.val);
+    preOrder(root.left);
+    preOrder(root.right);
+}
+
+module.exports = preorderTraversal
